@@ -1,0 +1,59 @@
+﻿<Window x:Class="UberManagerment_WPF.Receive_CallCar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UberManagerment_WPF"
+        mc:Ignorable="d"
+        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+        WindowStartupLocation="CenterScreen"
+        Title="Khách hàng khả dụng" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <DataGrid x:Name="dtgShowInfoCustomer"
+                      HorizontalAlignment="Center"
+                      AutoGenerateColumns="False"
+                      IsReadOnly="True"
+                      SelectionChanged="dtgShowInfoCustomer_SelectionChanged">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Họ tên" 
+                                        Width="150"
+                                        Binding="{Binding Name}"/>
+                    <DataGridTextColumn Header="Điện thoại" 
+                                        Width="120"
+                                        Binding="{Binding Telephone}"/>
+                    <DataGridTextColumn Header="Loại khách" 
+                                        Width="120"
+                                        Binding="{Binding TypeCustomer}"/>
+                    <DataGridTextColumn Header="Loại xe" 
+                                        Width="100"
+                                        Binding="{Binding TypeCar}"/>
+                    <DataGridTextColumn Header="Vị trí" 
+                                        Binding="{Binding Location_Customer}"/>
+                    <DataGridTextColumn Header="Status"
+                                        Binding="{Binding Status}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+        <Grid Grid.Row="1" HorizontalAlignment="Right">
+            <Button x:Name="btnReceive"
+                Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                Width="100" ToolTip="Accept"
+                Content="Nhận" 
+                Click="btnReceive_Click">
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

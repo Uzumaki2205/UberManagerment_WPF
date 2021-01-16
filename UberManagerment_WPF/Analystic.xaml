@@ -1,0 +1,94 @@
+﻿<Page x:Class="UberManagerment_WPF.Analystic"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UberManagerment_WPF"
+      mc:Ignorable="d" 
+      
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+      d:DesignHeight="500" d:DesignWidth="800"
+      Title="Analysic">
+
+    <Grid>
+        <StackPanel>
+            <Button x:Name="btnCountAccount" Margin="10"
+                Style="{StaticResource MaterialDesignRaisedButton}"
+                Width="auto"
+                ToolTip="Count"
+                    Content="Đếm số Account trong danh sách"
+                    Click="btnCountAccount_Click">
+            </Button>
+            <Button x:Name="btnShowVip" Margin="10"
+                Style="{StaticResource MaterialDesignRaisedButton}"
+                Width="auto"
+                ToolTip="Count"
+                Content="Xuất thông tin khách hàng VIP"
+                Click="btnShowVip_Click">
+            </Button>
+            <Button x:Name="btnShow5Customer" Margin="10"
+                Style="{StaticResource MaterialDesignRaisedButton}"
+                Width="auto"
+                ToolTip="Count"
+                    Click="btnShow5Customer_Click"
+                Content="5 Khách hàng có tiền cước cao nhất">
+            </Button>
+            <Button x:Name="btnShowListDriverMaxVAT" Margin="10"
+                Style="{StaticResource MaterialDesignRaisedButton}"
+                Width="auto"
+                ToolTip="Count"
+                    Click="btnShowListDriverMaxVAT_Click"
+                    Content="Xuất danh sách tài xế có tiền thuế nộp nhiều nhất">
+            </Button>
+            <Button x:Name="btnCountTypeCar" Margin="10"
+                Style="{StaticResource MaterialDesignRaisedButton}"
+                Width="auto"
+                ToolTip="Count"
+                    Click="btnCountTypeCar_Click"
+                    Content="Đếm số xe mỗi loại">
+            </Button>
+            <Button x:Name="btnShowCustomerMaxGo" Margin="10"
+                Style="{StaticResource MaterialDesignRaisedButton}"
+                Width="auto"
+                ToolTip="Count"
+                    Click="btnShowCustomerMaxGo_Click"
+                    Content="Tìm khách hàng có số chuyến đi nhiều nhất.">
+            </Button>
+            <Button x:Name="btnTongDoanhThu" Margin="10"
+                Style="{StaticResource MaterialDesignRaisedButton}"
+                Width="auto"
+                ToolTip="Count"
+                Click="btnTongDoanhThu_Click"
+                Content="Tổng doanh thu từng loại xe">
+            </Button>
+            <Button x:Name="btnDriverMax" Margin="10"
+                Style="{StaticResource MaterialDesignRaisedButton}"
+                Width="auto"
+                ToolTip="Count"
+                Click="btnDriverMax_Click"
+                Content="Tài xế cho doanh thu cao nhất">
+            </Button>
+            <Button x:Name="btnShowDriverCarReward" Margin="10"
+                Style="{StaticResource MaterialDesignRaisedButton}"
+                Width="auto"
+                ToolTip="Count"
+                Click="btnShowDriverCarReward_Click"
+                Content="Doanh sách tài xế xe ô tô được thưởng">
+            </Button>
+            <Button x:Name="btnShowDriverTaxiCarReward" Margin="10"
+                Style="{StaticResource MaterialDesignRaisedButton}"
+                Width="auto"
+                ToolTip="Count"
+                Click="btnShowDriverTaxiCarReward_Click"
+                Content="Doanh sách tài xế xe ô tô tải được thưởng">
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page>

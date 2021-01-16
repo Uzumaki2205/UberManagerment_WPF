@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ListCustomer>
+  <Customer>
+    <Name>Lê Ngọc Sơn</Name>
+    <UserName>uzumaki</UserName>
+    <Password>0979300575</Password>
+    <Telephone>01678756293</Telephone>
+    <Type_Customer>0</Type_Customer>
+    <Type_Car>0</Type_Car>
+    <Location>953</Location>
+    <Num_CallCar>24</Num_CallCar>
+    <Status>Hoa đã có chủ</Status>
+  </Customer>
+  <Customer>
+    <Name>Nguyễn Anh Hào</Name>
+    <UserName>tensinhan</UserName>
+    <Password>447541</Password>
+    <Telephone>7897444</Telephone>
+    <Type_Customer>1</Type_Customer>
+    <Type_Car>0</Type_Car>
+    <Location>192</Location>
+    <Num_CallCar>47</Num_CallCar>
+    <Status>Hoa đã có chủ</Status>
+  </Customer>
+  <Customer>
+    <Name>Nguyễn Hải Anh</Name>
+    <UserName>cuongPhong22</UserName>
+    <Password>123712</Password>
+    <Telephone>0157854114</Telephone>
+    <Type_Customer>0</Type_Customer>
+    <Type_Car>0</Type_Car>
+    <Location>781</Location>
+    <Num_CallCar>20</Num_CallCar>
+    <Status>Hoa đã có chủ</Status>
+  </Customer>
+  <Customer>
+    <Name>Thanh Thanh</Name>
+    <UserName>daksss</UserName>
+    <Password>8795465465</Password>
+    <Telephone>001577954</Telephone>
+    <Type_Customer>0</Type_Customer>
+    <Type_Car>0</Type_Car>
+    <Location>995</Location>
+    <Num_CallCar>9</Num_CallCar>
+    <Status>1</Status>
+  </Customer>
+</ListCustomer>

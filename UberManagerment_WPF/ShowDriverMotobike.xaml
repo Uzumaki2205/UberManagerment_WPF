@@ -1,0 +1,63 @@
+﻿<Page x:Class="UberManagerment_WPF.ShowDriverMotobike"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UberManagerment_WPF"
+      mc:Ignorable="d" 
+      
+       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+      d:DesignHeight="450" d:DesignWidth="950"
+      Title="ShowDriverMotobike">
+
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock Text="Xe Máy" 
+                       HorizontalAlignment="Center"
+                       FontSize="40"/>
+            <DataGrid x:Name="dtgInfoDriverCar" 
+                      HorizontalAlignment="Center"
+                      AutoGenerateColumns="False"
+                      IsReadOnly="True"
+                      SelectionChanged="dtgInfoDriverCar_SelectionChanged">
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Họ tên"
+                                        Width="150"
+                                        Binding="{Binding Name}"/>
+                    <DataGridTextColumn Header="Tài khoản"
+                                        Width="100"
+                                        Binding="{Binding UserName}"/>
+                    <DataGridTextColumn Header="Điện thoại"
+                                        Width="100"
+                                        Binding="{Binding Telephone }"/>
+                    <DataGridTextColumn Header="Loại tài xế"
+                                        Width="100"
+                                        Binding="{Binding Type_Driver }"/>
+                    <DataGridTextColumn Header="Mã số"
+                                        Width="100"
+                                        Binding="{Binding Id}"/>
+                    <DataGridTextColumn Header="Vị trí"
+                                        Width="100"
+                                        Binding="{Binding Location_Driver }"/>
+                    <DataGridTextColumn Header="Status"
+                                        Width="70"
+                                        Binding="{Binding Status }"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <RepeatButton x:Name="btnShow" Tag="{Binding TypeDriverReceive}"
+                Width="100" HorizontalAlignment="Right"
+                ToolTip="Xem khách đặt xe" 
+                          Content="Xem"
+                          Click="btnShow_Click">
+            </RepeatButton>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ListTravell>
+  <Travell>
+    <Name_Driver>Bắc Kim Thang</Name_Driver>
+    <Name_Customer>Lê Ngọc Sơn</Name_Customer>
+    <Location_From>953</Location_From>
+    <Location_To>900</Location_To>
+    <TimeStart>21</TimeStart>
+    <Date>01/08/2020</Date>
+    <MoneyTake>41100.0006124377</MoneyTake>
+    <MoneyGive>2055.00006124377</MoneyGive>
+  </Travell>
+  <Travell>
+    <Name_Driver>Bắc Kim Thang</Name_Driver>
+    <Name_Customer>Nguyễn Hải Anh</Name_Customer>
+    <Location_From>781</Location_From>
+    <Location_To>700</Location_To>
+    <TimeStart>21</TimeStart>
+    <Date>01/08/2020</Date>
+    <MoneyTake>41100.0006124377</MoneyTake>
+    <MoneyGive>2055.00006124377</MoneyGive>
+  </Travell>
+  <Travell>
+    <Name_Driver>Bắc Kim Thang</Name_Driver>
+    <Name_Customer>Nguyễn Anh Hào</Name_Customer>
+    <Location_From>192</Location_From>
+    <Location_To>100</Location_To>
+    <TimeStart>21</TimeStart>
+    <Date>01/08/2020</Date>
+    <MoneyTake>46600.0006943941</MoneyTake>
+    <MoneyGive>2330.00006943941</MoneyGive>
+  </Travell>
+</ListTravell>

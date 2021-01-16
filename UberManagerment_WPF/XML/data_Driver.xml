@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListDriver>
+  <Driver>
+    <ID>001</ID>
+    <Name>Bắc Kim Thang</Name>
+    <UserName>heoheo</UserName>
+    <Password>01678756293</Password>
+    <Telephone>054679814</Telephone>
+    <Type_Driver>0</Type_Driver>
+    <Location>23</Location>
+    <Status>1</Status>
+  </Driver>
+  <Driver>
+    <ID>002</ID>
+    <Name>Nguyễn Thiên Hiếu</Name>
+    <UserName>fusionEnal</UserName>
+    <Password>489741413SS</Password>
+    <Telephone>219874514</Telephone>
+    <Type_Driver>1</Type_Driver>
+    <Slot>4</Slot>
+    <Location>11</Location>
+    <Status>0</Status>
+  </Driver>
+  <Driver>
+    <ID>003</ID>
+    <Name>Lê Bảo Bình</Name>
+    <UserName>binhbb22</UserName>
+    <Password>123456789</Password>
+    <Telephone>8965415</Telephone>
+    <Type_Driver>2</Type_Driver>
+    <Weight>5</Weight>
+    <Location>544</Location>
+    <Status>0</Status>
+  </Driver>
+  <Driver>
+    <ID>004</ID>
+    <Name>Lê Le Le</Name>
+    <UserName>leleduck23</UserName>
+    <Password>565778</Password>
+    <Telephone>13498</Telephone>
+    <Type_Driver>1</Type_Driver>
+    <Slot>6</Slot>
+    <Location>4</Location>
+    <Status>0</Status>
+  </Driver>
+</ListDriver>

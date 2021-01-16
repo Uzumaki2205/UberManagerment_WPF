@@ -1,0 +1,62 @@
+﻿<Page x:Class="UberManagerment_WPF.Information_Customer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UberManagerment_WPF"
+      mc:Ignorable="d" 
+      
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+      d:DesignHeight="450" d:DesignWidth="850"
+      Title="Thông tin khách hàng">
+
+    <Grid>
+        <StackPanel>
+            <DataGrid x:Name="dtgInfoCustomer" 
+                      HorizontalAlignment="Center"
+                      AutoGenerateColumns="False"
+                      IsReadOnly="True"
+                      SelectionChanged="dtgInfoCustomer_SelectionChanged">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Họ tên"
+                                        Width="150"
+                                        Binding="{Binding Name}"/>
+                    <DataGridTextColumn Header="Tài khoản"
+                                        Width="100"
+                                        Binding="{Binding UserName}"/>
+                    <DataGridTextColumn Header="Mật Khẩu"
+                                        Width="100"
+                                        Binding="{Binding PassWord}"/>
+                    <DataGridTextColumn Header="Điện thoại"
+                                        Width="100"
+                                        Binding="{Binding Telephone}"/>
+                    <DataGridTextColumn Header="Loại khách"
+                                        Width="100"
+                                        Binding="{Binding TypeCustomer }"/>
+                    <DataGridTextColumn Header="Loại xe"
+                                        Width="100"
+                                        Binding="{Binding TypeCar }"/>
+                    <DataGridTextColumn Header="Vị trí"
+                                        Width="100"
+                                        Binding="{Binding Location_Customer }"/>
+                    <DataGridTextColumn Header="Status"
+                                        Width="70"
+                                        Binding="{Binding Status }"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <RepeatButton x:Name="btnCallBike"
+                Width="100" HorizontalAlignment="Right"
+                ToolTip="Call Bike" Content="Đặt xe"
+                          Click="btnCallBike_Click">
+            </RepeatButton>
+        </StackPanel>
+        
+    </Grid>
+</Page>
